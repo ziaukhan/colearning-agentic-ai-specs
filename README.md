@@ -4,7 +4,7 @@ This repo contains all the specifications for Spec-Kit Plus using Claude Code/Ge
 
 ## Colearning Programming & Agentic AI with Python and TypeScript: The AI-Driven Way
 
-- Part 1: Introducing AI-Driven Development (3 chapters)
+- Part 1: Introducing AI-Driven Development (4 chapters)
 - Part 2: AI Tool Landscape (4 chapters) ← Gemini, Claude, Codex overview
 - Part 3: Prompt & Context Engineering (2 chapters)
 - Part 4: Python: The Language of AI Agents (12 chapters)

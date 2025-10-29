@@ -16,9 +16,9 @@ Include:
 - Non-negotiable rules
 - Import all the Claude Code Skills that will used to generate the book
 
-The book structure will be as follows, consisting of 13 parts and 46 chapters:
+The book structure will be as follows, consisting of 13 parts and 47 chapters:
 
-- Part 1: Introducing AI-Driven Development (3 chapters)
+- Part 1: Introducing AI-Driven Development (4 chapters)
 - Part 2: AI Tool Landscape (4 chapters) ← Gemini, Claude, Codex overview
 - Part 3: Prompt & Context Engineering (2 chapters)
 - Part 4: Python: The Language of AI Agents (12 chapters)

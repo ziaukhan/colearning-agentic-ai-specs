@@ -1505,14 +1505,4 @@ Same task with both tools:
 2. Implement same feature with Gemini CLI
 3. Compare: context management approach, results, efficiency
 
-## Additional Resources
 
-- [Anthropic: Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
-- [LangChain: Context Engineering Strategies](https://python.langchain.com/docs/modules/agents/)
-- [Cognition: Multi-Agent Framework Principles](https://cognition-labs.com/blog)
-- [Claude Code Documentation](https://docs.claude.com/en/docs/claude-code)
-- [Gemini CLI Best Practices](https://ai.google.dev/docs)
-
----
-
-**Next Chapter Preview**: In Chapter 11, we'll combine everything you've learned—prompt engineering from Chapter 9 and context engineering from this chapter—to build a complete, production-grade blog API from scratch using Python, FastAPI, and Claude Code. You'll see how proper prompting and context management accelerate development while maintaining code quality.

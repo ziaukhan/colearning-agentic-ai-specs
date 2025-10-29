@@ -23,3 +23,4 @@ Our sequence flows beautifully from “understanding the AI revolution” → �
 ## Specifications
 
 1. [Constitution](./constitution.md)
+2. [Docusaurus Spec](01_docusaurus_spec.md)

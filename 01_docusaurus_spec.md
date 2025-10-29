@@ -1,0 +1,1 @@
+ /sp.specify Create a new Docusaurus 3.9.2 site at the root of the project with all the parts and chapters. All the book parts should be closed not expanded. Each chapter should have dummy and skeleton content in it. 

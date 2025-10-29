@@ -34,7 +34,7 @@ The book structure will be as follows, consisting of 13 parts and 46 chapters:
 
 Our sequence flows beautifully from “understanding the AI revolution” → “meeting the tools” → “learning to communicate” → “learning to code in Python” → “learning Spec Driven Development methodology” → “build OpenAI Agents in Python” → “build MCP servers” → “learn to code in TypeScript” → “build realtime and voice agents” → “deploy ai agents”
 
-This book will be published on Github and our Panaversity (panaversity.org) website. It will also be published on Amazon's Kindle Direct Publishing.
+This book will be published on Github and our Panaversity (panaversity.org) website. We will also print it in pdf format. It will also be published on Amazon's Kindle Direct Publishing, Leanpub, and other stores.
 
 Make it detailed enough that Claude Code can reference it for every chapter.
 

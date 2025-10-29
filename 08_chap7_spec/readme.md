@@ -1,4 +1,4 @@
-/sp.specify Write chapter 7 in Part 2 of the book. The title of the chapter will be "Bash Essentials for AI CLI Development".
+/sp.specify Write chapter 7 in Part 2 of the book. The title of the chapter will be "Bash Essentials for AI-Driven Development".
 
 This chapter will server as a minimal guide to get you productive with Bash and Coding Agents like Claude Code and Gemini CLI.
 

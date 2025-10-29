@@ -1,6 +1,6 @@
-# Colearning Programming & Agentic AI with Python and TypeScript: The AI-Driven Way
+# Specifications for Colearning Programming & Agentic AI with Python and TypeScript: The AI-Driven Way
 
-This repo contains all the prompts for Spec-Kit Plus using Claude Code/Gemini CLI/GPT-5-Codex to write the complete book.
+This repo contains all the specifications for Spec-Kit Plus using Claude Code/Gemini CLI/GPT-5-Codex to write the following complete book:
 
 ## Colearning Programming & Agentic AI with Python and TypeScript: The AI-Driven Way
 

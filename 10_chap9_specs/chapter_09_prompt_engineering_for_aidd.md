@@ -1,4 +1,4 @@
-/sp.specify Write chapter 9 in Part 3 of the book. The title of the chapter will be "Prompt Engineering for AI-Driven Development".
+# Chapter 9: Prompt Engineering for AI-Driven Development
 
 ## Introduction: Why Prompt Engineering is Critical in AIDD
 
@@ -659,7 +659,7 @@ Debug the intermittent "Database connection timeout" errors occurring in product
 
 **CONTEXT:**
 Project: E-commerce order processing system
-Tech Stack: Python 3.13, FastAPI, PostgreSQL 14, SQLAlchemy 1.4, deployed on AWS ECS
+Tech Stack: Python 3.11, FastAPI, PostgreSQL 14, SQLAlchemy 1.4, deployed on AWS ECS
 Issue: Started 3 days ago after deploying new batch processing feature
 Frequency: 5-10 errors per hour, mostly during peak traffic (2-4 PM EST)
 Impact: Orders failing to process, customer complaints increasing
@@ -722,7 +722,7 @@ Review and refactor the payment processing module for better maintainability, te
 **CONTEXT:**
 Project: Multi-tenant SaaS billing system
 Current State: Payment module works but is difficult to test and extend
-Tech Stack: Python 3.13, FastAPI, Stripe API, PostgreSQL
+Tech Stack: Python 3.10, FastAPI, Stripe API, PostgreSQL
 Problems:
 - 300-line function handling multiple payment providers
 - Tight coupling to Stripe API (hard to add new providers)
@@ -1312,7 +1312,10 @@ In the next chapter, we'll apply these prompting techniques to our first real pr
 
 - [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
 - [Google Gemini Best Practices](https://ai.google.dev/docs/prompt_best_practices)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [SQLAlchemy 2.0 Documentation](https://docs.sqlalchemy.org/)
 - [pytest Documentation](https://docs.pytest.org/)
 
 ---
 
+**Next Chapter Preview**: In Chapter 10, we'll put these prompting techniques into practice by building a complete REST API from scratch using Claude Code. You'll see firsthand how effective prompting accelerates development while maintaining code quality.

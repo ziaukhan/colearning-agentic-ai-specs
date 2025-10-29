@@ -12,7 +12,7 @@ The book is geared towards teaching beginners how to program Modern Python, Type
 3. How to Make a Billion Dollars in the AI Era?
 4. The Nine Pillar of AI Driven Development (AIDD)
 
-### Part 2: AI Tool Landscape (4 chapters) ← Gemini, Claude, Codex overview
+### Part 2: AI Tool Landscape (4 chapters) ← Gemini, and Codex overview
 5. How It All Started: The Claude Code Phenomenon
 6. Google Gemini CLI: Open Source and Everywhere
 7. Bash Essentials for AI-Driven Development

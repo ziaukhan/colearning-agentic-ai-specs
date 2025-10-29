@@ -19,7 +19,8 @@ The book is geared towards teaching beginners how to program Modern Python, Type
 8. Git & GitHub for AI-Driven Development
 
 ### Part 3: Prompt & Context Engineering (2 chapters)
-9. Prompt and Context Engineering
+9. Prompt Engineering for AI-Driven Development
+10. Context Engineering for AI-Driven Development
 
 - Part 4: Python: The Language of AI Agents (12 chapters)
 - Part 5: Spec-Kit Plus Methodology (3 chapters)

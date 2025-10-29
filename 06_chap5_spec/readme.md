@@ -10,6 +10,8 @@ Claude Code didn't just introduce a new tool; it validated an entirely new parad
 
 This chapter will serve as a tutorial for beginners for Claude Code using the official documentation links below. Place special emphasis on installing, Subagents, Agent Skills, and connecting MCP servers. Agent Skills have been announced recently but they are very important because we can create a vertical agent skill library for our domain, startup, and company giving us a competetive advantage.
 
+The magic? You stay in control with approval modes ranging from full manual review to autonomous execution. Claude Code now features **checkpoints** for autonomous operation, **subagents** that delegate specialized tasks for parallel workflows, **Skills** to improve how it performs specific tasks, and **hooks** that automatically trigger actions at specific points like running test suites after code changes.
+
 [Overview](https://docs.claude.com/en/docs/claude-code/overview)
 
 [Quick Start](https://docs.claude.com/en/docs/claude-code/quickstart)

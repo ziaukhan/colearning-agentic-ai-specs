@@ -22,7 +22,11 @@ The book is geared towards teaching beginners how to program Modern Python, Type
 9. Prompt Engineering for AI-Driven Development
 10. Context Engineering for AI-Driven Development
 
-- Part 4: Python: The Language of AI Agents (12 chapters)
+### Part 4: Python: The Language of AI Agents (20 chapters)
+11. Python UV: Fastest Python Package Manager
+12. Introduction to Python
+13. Data Types
+
 - Part 5: Spec-Kit Plus Methodology (3 chapters)
 - Part 6: Agentic AI Fundamentals with OpenAI Agents SDK in Python (3 chapters)
 - Part 7: MCP Fundamentals with FastMCP (3 chapters)

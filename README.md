@@ -27,7 +27,9 @@ The book is geared towards teaching beginners how to program Modern Python, Type
 12. Introduction to Python
 13. Data Types
 
-- Part 5: Spec-Kit Plus Methodology (3 chapters)
+## Part 5: Spec-Kit Plus Methodology (3 chapters)
+34. 
+
 - Part 6: Agentic AI Fundamentals with OpenAI Agents SDK in Python (3 chapters)
 - Part 7: MCP Fundamentals with FastMCP (3 chapters)
 - Part 8: TypeScript: The Language of Realtime and Interaction (3 Chapters)

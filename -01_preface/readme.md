@@ -26,7 +26,7 @@ This book, **“AI Native Software Development: Colearning Agentic AI with Pytho
 
 You’ll learn to:
 
-* **Build alongside AI**, not just with it. You will co-creating with Claude Code and Gemini CLI.
+* **Build alongside AI**, not just with it. You will be co-creating with Claude Code and Gemini CLI.
 * **Write specifications that AIs can understand**, and let them generate the scaffolding, code, and documentation.
 * **Master both Python and TypeScript**, the dual engines driving the reasoning and interactive layers of the AI-native stack.
 * **Design agentic systems** that reason, act, and co-learn with you.

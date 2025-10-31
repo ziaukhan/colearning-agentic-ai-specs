@@ -1,4 +1,4 @@
-/sp.specify Write chapter 34 in Part 4 of the book. The title of the chapter will be "Understanding Spec-Driven-Development".
+/sp.specify Write chapter 30 in Part 4 of the book. The title of the chapter will be "Understanding Spec-Driven-Development".
 
 
 ## 💡 Understanding Spec-Driven Development

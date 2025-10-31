@@ -1,8 +1,8 @@
-# AI Native Software Development: Colearning Agentic AI with Python and TypeScript – The AI & Spec Driven Way
+# AI Native Software Development: Co-learning Agentic AI with Python and TypeScript – The AI & Spec Driven Way
 
 The Book title: "AI Native Software Development" 
 
-The Sub-title: " Colearning Agentic AI with Python and TypeScript – The AI & Spec Driven Way"
+The Sub-title: " Co-learning Agentic AI with Python and TypeScript – The AI & Spec Driven Way"
 
 URLs:
 
@@ -20,9 +20,9 @@ https://panaversity.com/books/ai-native-software-development
 
 ## 📖 **Preface: Welcome to the AI-Native Era**
 
-For the first time in human history, we’re not teaching machines *what* to do — we’re teaching them *how to learn with us*. Software development has always been about logic, syntax, and structure, but in the **AI-Driven Development (AIDD)** era, it becomes something more human, conversational, and collaborative.
+For the first time in human history, we’re not just teaching machines *what* to do — we’re teaching them *how to learn with us*. Software development has always been about logic, syntax, and structure, but in the **AI-Driven Development (AIDD)** era, it becomes something more human, conversational, and collaborative.
 
-This book, **“AI Native Software Development: Colearning Agentic AI with Python and TypeScript – The AI & Spec Driven Way,”** is your guide to becoming fluent in this new language of creation — a language spoken by humans and intelligent agents alike.
+This book, **“AI Native Software Development: Co-learning Agentic AI with Python and TypeScript – The AI & Spec Driven Way,”** is your guide to becoming fluent in this new language of creation — a language spoken by humans and intelligent agents alike.
 
 You’ll learn to:
 
@@ -250,7 +250,7 @@ In this new model:
 * You evaluate, refine, and clarify.
 * Together, you converge on a working solution.
 
-That process — **colearning** — is the heart of AI-native development. It’s not about replacing the developer; it’s about *augmenting* the developer’s reasoning, creativity, and speed.
+That process — **Co-learning** — is the heart of AI-native development. It’s not about replacing the developer; it’s about *augmenting* the developer’s reasoning, creativity, and speed.
 
 This book will teach you how to guide AI like a mentor, not a manager. You’ll write code, yes — but you’ll also learn how to **shape intent into intelligence**.
 
@@ -476,7 +476,7 @@ AI-Driven Development isn’t just “using AI to code.” It’s an **end-to-en
 3. **Execution:** AI-assisted environments test, deploy, and refine.
 4. **Reflection:** Agents analyze performance, suggest fixes, and learn.
 
-This process is recursive — AIs help you design better specs, which generate better code, which produces better data, which improves the AI itself. It’s the feedback loop that fuels *colearning*.
+This process is recursive — AIs help you design better specs, which generate better code, which produces better data, which improves the AI itself. It’s the feedback loop that fuels *Co-learning*.
 
 ---
 
@@ -593,7 +593,7 @@ An AI can *understand*, *validate*, and *execute* this spec repeatedly — and e
 
 ---
 
-### 3. Colearning in Practice
+### 3. Co-learning in Practice
 
 In AI-Native development, learning happens on both sides:
 

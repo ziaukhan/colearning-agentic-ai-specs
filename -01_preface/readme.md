@@ -13,7 +13,7 @@ and
 https://panaversity.com/books/ai-native-software-development
 
 
-![](./cover_page.png)
+![](./<img width="1024" height="1024" alt="updated_cover_page" src="https://github.com/user-attachments/assets/33fad4a3-4dba-4d36-93c0-cff8b8cf9d61" />)
 
 
 ---

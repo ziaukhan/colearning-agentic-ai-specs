@@ -106,3 +106,53 @@ Our business model is as straightforward as our architecture.
 3.  **Team Tier (For Companies & Schools):** Everything in Pro, plus cohort mode, teacher/publisher dashboards, and SSO.
 
 Monetization is based on usage (e.g., AI interactions, database use) after a generous free tier, as well as per-seat licenses for Team/Cohort features.
+
+# Should the Spec be Generated First?
+
+Based on your entire "Coauthor-Kit AI" architecture, you should **definitely generate the YAML files first**, and then use those files to build the book.
+
+The core strength of your product is the **ManuSpec**—the structured specification (in YAML format) that dictates the book's creation.
+
+---
+
+## 🛠️ Why Generate the YAML (`ManuSpec`) First?
+
+Generating the `ManuSpec.yml` file is not just a technical step; it is the **fundamental value proposition** of your product.
+
+| Approach | Advantage for Coauthor-Kit AI |
+| :--- | :--- |
+| **Generate YAML First** | **Establishes Control and Determinism:** The YAML is the single source of truth. It contains all the author's critical decisions (constitution, specs, voice, acceptance criteria). This is necessary for the next step. |
+| **Generate Book Directly** | **Bypasses the Core Innovation:** If you generate the book directly, you lose the ability to apply version control, audit the inputs, and enforce the constraints defined by the Spec-Kit methodology. The output becomes a "black box." |
+
+### 1. **Enforcing Spec-Driven Methodology**
+
+The entire process is predicated on the **GitHub Spec-Kit** workflow (Constitution $\rightarrow$ Specs $\rightarrow$ Plan $\rightarrow$ Task $\rightarrow$ Implement).
+
+* The YAML file is the output of the first four steps (Constitution, Specs, Plan, Task).
+* The actual book content is the output of the fifth step (Implement).
+
+You need the structured, versioned, and auditable **plan** (`ManuSpec.yml`) *before* you execute the potentially expensive and variable content generation.
+
+### 2. **Enabling the Git Workflow**
+
+You highlighted that your product "fits naturally into **Git workflows** and provides **reviewable diffs** for every pass."
+
+* The author **reviews and commits the `ManuSpec.yml`** (the plan) to Git. This ensures the *author's intent* is versioned.
+* Then, the Coauthor-Kit Engine generates the final book content based on that committed plan.
+* If the generated book content is also committed, the author can review the diffs between two versions of the *book* and trace any changes back to the source `ManuSpec` that caused them.
+
+### 3. **Separating Author Intent from AI Execution**
+
+The YAML file is the clean break between the **Human/Spec-Kit Conversation** and the **AI Compilation Engine**.
+
+* **Human/Claude Code's Job:** Create, refine, and commit the precise instructions in the YAML.
+* **Sub-Agents' Job:** Read the YAML and deterministically execute the implementation steps.
+
+This separation is crucial for debugging, maintenance, and providing the **Live Updates with Versioning** feature you planned.
+
+---
+
+**Conclusion:**
+
+The conversational process with Claude Code should be engineered to **produce and refine the `ManuSpec.yml` file.** This YAML file then acts as the **blueprint** that the sub-agents read to *build the actual book content*.
+

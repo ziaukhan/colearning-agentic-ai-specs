@@ -7,6 +7,59 @@
 
 This keeps each framework doing what it’s best at, without lock-in. (All three support MCP or easy interop.)
 
+Almost any agent/RAG/workflow framework can slot into that pattern. The two universal ways to plug them in are:
+
+1. **Expose it as an HTTP microservice** and call it from the OpenAI Agents SDK as a **function tool** (like the ADK/Claude stubs).
+2. **Wrap it as an MCP server** and attach it as an MCP tool.
+
+Here’s where popular options fit:
+
+### Orchestrator alternatives
+
+* **LangGraph / LangChain** – Use *instead of* the OpenAI Agents SDK if you want graph/state-machine control. Either:
+
+  * Run LangGraph inside the same gateway (library mode) and still call ADK/Claude via HTTP; or
+  * Put LangGraph behind its own FastAPI service and call it as a tool from the OpenAI orchestrator.
+* **CrewAI / AutoGen** – Treat a “crew” or agent swarm as a **subgraph** behind HTTP. Great for code-gen/dev-automation pods (parallel to your Claude subagent).
+* **Semantic Kernel (SK)** – If you’ve got SK skills/planners already, expose a “plan/execute” endpoint and call it as a tool; or wrap your SK skill hub as an MCP server.
+
+### Tooling / data layer swaps
+
+* **LlamaIndex / LangChain RAG** – Run your RAG as a service (`/query`, `/ingest`) or serve it via MCP. The orchestrator decides *when* to use it; your RAG service handles *how*.
+* **Haystack, Text-Generation-Inference, vLLM/Ollama** – Same: put behind HTTP, or register via MCP; route calls via LiteLLM if you prefer one endpoint.
+* **Vector DBs** (pgvector, Pinecone, Weaviate, Qdrant) – Either expose CRUD/query endpoints that the orchestrator calls as tools, or pick an MCP server that fronts them.
+
+### Routing, guardrails, observability
+
+* **LiteLLM / OpenRouter** – Drop-in as your model router; set the gateway to call the router instead of OpenAI directly.
+* **Guardrails / Guidance / DSPy** – Best embedded inside a **subservice** (e.g., “guardrailed-rag”) so the orchestrator just sees a clean tool.
+* **Langfuse / LangSmith / Arize Phoenix / AgentOps** – Instrument the gateway and subservices for traces/metrics; doesn’t change the pattern.
+
+### Workflow & long-running jobs
+
+* **Temporal / Dagster / Prefect / Airflow** – For multi-hour tasks (ETL, evals), make a “job-runner” service that the orchestrator triggers, then polls/status-calls as a tool.
+
+---
+
+## How to add “any framework” in your current skeleton
+
+1. Spin up a new microservice (e.g., `apps/langgraph_service`) with a `POST /run` that accepts `{prompt: string, context?: …}` and returns `{result: string}`.
+2. In `apps/gateway/main.py`, add a function tool:
+
+```python
+@function_tool
+def call_langgraph(prompt: str) -> str:
+    import httpx
+    r = httpx.post(f"{os.getenv('LANGGRAPH_URL')}/run", json={"prompt": prompt}, timeout=120)
+    r.raise_for_status()
+    return r.json().get("result", "")
+```
+
+3. Decide if it should be **MCP** instead—then run it as/behind an MCP server and register it with `HostedMCPTool(...)`.
+
+That’s it—the orchestrator keeps doing handoffs/tracing; each extra framework is “just another tool” via HTTP or MCP. If you tell me which one you want first (LangGraph, CrewAI, AutoGen, SK, LlamaIndex), I’ll drop a ready-to-run microservice into the repo zip and wire it in.
+
+
 
 
 ## Research

@@ -2,7 +2,15 @@
 
 Instead of writing a manuscript from scratch, authors **co-create a `ManuSpec`** (a "book specification") through a structured conversation with an AI. This spec, not a traditional manuscript, becomes the single source of truth that AI agents use to build, test, and maintain the content. It includes examples of ManuSpec:
 
-https://chatgpt.com/share/690af775-e138-8001-847f-eff31427fafc
+https://chatgpt.com/share/690c3dd2-de08-8001-b57a-564aaeffa17f
+
+https://gemini.google.com/share/76c8100ccb51
+
+i think the best approach is to first generate a Markdown-formatted manuspec (not in yaml or json) for our book and then use that as the foundation for our Docusaurus files. the manuspec should be in markdown not in yaml or json.
+
+A Markdown-first ManuSpec is the most author-friendly path: you get readable diffs, zero friction in PRs, and a single file that both humans and the compiler can understand. Then your build step can emit Docusaurus MDX + sidebars from that Markdown. Below is a practical Markdown DSL (“SpecMD”) you can adopt today, plus ready-to-use templates for BOOK.manuspec.md and CHAPTER.manuspec.md, and the exact mapping your compiler should follow.
+
+
 
 ### 1. The Vision: From Manual Writing to Conversational Specs
 

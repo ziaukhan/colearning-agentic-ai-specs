@@ -1,5 +1,9 @@
 ## Coauthor-Kit AI: A Spec-Driven Engine for AI-Native Books
 
+Instead of writing a manuscript from scratch, authors **co-create a `ManuSpec`** (a "book specification") through a structured conversation with an AI. This spec, not a traditional manuscript, becomes the single source of truth that AI agents use to build, test, and maintain the content. It includes examples of ManuSpec:
+
+https://chatgpt.com/share/690af775-e138-8001-847f-eff31427fafc
+
 ### 1. The Vision: From Manual Writing to Conversational Specs
 
 Technical writing is broken. Authors wrestle with static, monolithic documents, while readers are left with a one-size-fits-all experience.

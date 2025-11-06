@@ -4,7 +4,7 @@ Instead of writing a manuscript from scratch, authors **co-create a `ManuSpec`**
 
 https://chatgpt.com/share/690c3dd2-de08-8001-b57a-564aaeffa17f
 
-https://gemini.google.com/share/76c8100ccb51
+https://gemini.google.com/share/361b1a7a4809
 
 i think the best approach is to first generate a Markdown-formatted manuspec (not in yaml or json) for our book and then use that as the foundation for our Docusaurus files. the manuspec should be in markdown not in yaml or json.
 

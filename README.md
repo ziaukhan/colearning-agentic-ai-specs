@@ -205,7 +205,16 @@ Covers: https://github.com/ziaukhan/colearning-agentic-ai-specs/blob/main/chap43
 
 Our sequence flows beautifully from “understanding the AI revolution” → “meeting the tools” → “learning to communicate” → “learning to code in Python” → “learning Spec Driven Development methodology” → “build OpenAI Agents in Python” → “build MCP servers” → “learn to code in TypeScript” → “build realtime and voice agents” → “deploy ai agents”
 
-## Specifications
+## Templates
 
-1. [Constitution](./constitution.md)
-2. [Docusaurus Spec](01_docusaurus_spec.md)
+Four Layer/Step Framework Template for teaching AI Native and Cloud-Native topics:
+https://claude.ai/share/655df95e-f62d-417f-be1b-71a16ffbf51f
+
+For the Kubernetes it might become 7 layer framework:
+1.⁠ ⁠Classic documentation using Command line tool (kubectl) Layer
+2.⁠ ⁠⁠kubectl-ai Layer
+3.⁠ ⁠⁠kagent Layer
+4.⁠ ⁠⁠claude code layer
+5.⁠ ⁠⁠Helm charts layer
+6.⁠ ⁠⁠subagent and agent skills layer
+7.⁠ ⁠⁠SDD Layer

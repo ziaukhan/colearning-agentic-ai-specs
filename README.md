@@ -218,3 +218,21 @@ For the Kubernetes it might become 7 layer framework:
 5.⁠ ⁠⁠Helm charts layer
 6.⁠ ⁠⁠subagent and agent skills layer
 7.⁠ ⁠⁠SDD Layer
+
+## Design
+
+![](./design1.jpeg)
+
+[10/11/2025, 4:15:58 PM] Zia Khan: https://gemini.google.com/share/dbfc95aec8c1
+
+[10/11/2025, 4:40:07 PM] Zia Khan: Design with react code: https://claude.ai/public/artifacts/dc38c376-3ccb-439c-a855-b44d47a8bdc1
+[10/11/2025, 4:43:55 PM] Zia Khan: Design conversation: https://claude.ai/share/35fe6d49-e745-4a34-a1a2-019b69ee1e0e
+
+
+how to teach in this book using a scoratic method something like openai study more? how to incorporate this in the design?
+![](./design2.jpeg)
+https://gemini.google.com/share/d446448ff9a8
+
+check this landing page:
+
+https://claude.ai/public/artifacts/2312255d-3697-4b2e-8430-d99017549908

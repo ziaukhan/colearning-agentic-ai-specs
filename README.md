@@ -48,21 +48,32 @@ The book is geared towards teaching beginners how to program Modern Python, Type
 32. Building Projects with Spec-Kit Plus
 33. The Tessl Vision: Spec-as-Source
 
-## Part 6: AI Native Software Development (3 chapters)
+## Part 6: AI Native Software Development (13 Chapters)
+34. Introduction to AI Agents
+35. OpenAI Agents SDK Development using SDD
+36. Google ADK Development using SDD
+37. Anthropic Agents Kit Development using SDD
+38. MCP Fundamentals
+39. MCP Server Development using SDD
+40. FastAPI for Agents (Primer)
+Coverage: minimal agent tool endpoint; Pydantic models from your SDD; streaming tokens (SSE/WebSocket) for live agent output; simple API key/JWT; local testing with pytest + httpx.
+41. Evals
+42. Building Effective Agents (Patterns)
+43. Combo Agentic Pattern using SDD
+44. Vector Databases and RAG for AI Agents
+45. Relational Databases for AI Agents
+46. Graph Databases and Graph RAG for AI Agents
+47. Observability
 
-## Part 7: MCP Fundamentals with FastMCP (3 chapters)
+## Part 7: AI Cloud Native Development (3 chapters)
 
 ## Part 8: TypeScript: The Language of Realtime and Interaction (3 Chapters)
 
 ## Part 9: Building Realtime and Voice Agents (3 Chapters)
 
-## Part 10: Containerization & Orchestration using Docker and Kubernetes (3 Chapters)
+## Part 10: Event-Driven Architecture using Kafka and Dapr (2 Chapters)
 
-## Part 11: Data, State, and Memory using PostgreSQL, Graph, and Vector Databases (3 Chapters)
-
-## Part 12: Event-Driven Architecture using Kafka and Dapr (2 Chapters)
-
-## Part 13: Stateful Agents using Dapr Actors and Dapr Workflows (2 Chapters)
+## Part 11: Stateful Agents using Dapr Actors and Dapr Workflows (2 Chapters)
 
 Our sequence flows beautifully from “understanding the AI revolution” → “meeting the tools” → “learning to communicate” → “learning to code in Python” → “learning Spec Driven Development methodology” → “build OpenAI Agents in Python” → “build MCP servers” → “learn to code in TypeScript” → “build realtime and voice agents” → “deploy ai agents”
 

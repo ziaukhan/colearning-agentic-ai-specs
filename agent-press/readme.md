@@ -1,6 +1,7 @@
 # Agentic Press — Books Built to Think
 
-![](./logos/logo.png)
+<img src="./logos/logo.png" alt="logo" width="400"/>
+
 
 Domain: agentic-press.ai
 

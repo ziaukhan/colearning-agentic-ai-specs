@@ -236,3 +236,18 @@ https://gemini.google.com/share/d446448ff9a8
 check this landing page:
 
 https://claude.ai/public/artifacts/2312255d-3697-4b2e-8430-d99017549908
+
+
+## API
+
+Server public repo for the interactive books:
+
+1. It will be implemented in FastAPI
+2. ⁠The user will be able to use api after login
+3. ⁠I will have apis for 
+3a. Chat (standard mode with Contextual Rag)
+3b. Scoratic Chat method Mode with Contextual Rag
+3c. Summarisation by Chapter and Lessons
+3d. Personalization by Chapter and Lessons
+3e. Translation by Chapter and Lessons
+4.⁠ ⁠it will be multi-tanent i.e. able to support many books

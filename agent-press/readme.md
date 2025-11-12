@@ -1,8 +1,8 @@
 # Agentic Press — Books Built to Think
 
-Domain: agentic-press.ai
-
 ![](./logos/logo.png)
+
+Domain: agentic-press.ai
 
 [Detailed Business Plan](./business-plan.md)
 

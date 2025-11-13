@@ -205,12 +205,72 @@ Covers: https://github.com/ziaukhan/colearning-agentic-ai-specs/blob/main/chap43
 
 Our sequence flows beautifully from “understanding the AI revolution” → “meeting the tools” → “learning to communicate” → “learning to code in Python” → “learning Spec Driven Development methodology” → “build OpenAI Agents in Python” → “build MCP servers” → “learn to code in TypeScript” → “build realtime and voice agents” → “deploy ai agents”
 
-## Templates
+## Template for Writing AI-Native and Cloud-Native Chapters
 
-Four Layer/Step Framework Template for teaching AI Native and Cloud-Native topics:
-https://claude.ai/share/655df95e-f62d-417f-be1b-71a16ffbf51f
+Four Layer Framework for teaching AI Native and Cloud-Native chapters:
 
-For the Kubernetes it might become 7 layer framework:
+Going forward humans will not be coding themselves but co-learning and co-developing with coding agents like claude code i.e. doing AI Driven Development (AIDD):
+
+https://code.claude.com/docs/en/overview
+
+The developers will also use subagents and agent skills technology of claude code to develop reusage intelligence, which he/she can use again and again, so that developer will not have to give a detailed prompt each and every time:
+
+https://code.claude.com/docs/en/sub-agents
+
+https://code.claude.com/docs/en/skills
+
+And for development agentic projects we will be using spec driven development with tools like github spec-kit:
+
+https://github.com/github/spec-kit
+
+I want to write a part of the book which teaches a technology using AI-Driven Development and Spec-Driven Development way. 
+
+The book part will have many chapters and each consisting of many lessons.
+
+Every chapter in the part will cover and teach each lesson using the following 4 layer workflow:
+
+The chapter will start with a first lesson, and will start by explaining the topics in the lesson by using the material from the official documentation.  In this step we will explain to the reader about how to do it if the developer was doing the task by hand, the purpose, functionality, and the concepts. This is the traditional way of teaching, to explain the concept, purpose, and demonstrate how to accomplish the task. 
+
+In the second layer in the lesson will explain how to do exactly the same thing as was done in layer 1 by hand but in the AI Driven Way, i.e. by the doing the same thing which was done in layer 1, but by prompting Claude Code or any other coding agent.
+
+In the third layer of the lesson we will teach the readers to create pieces of reusable intelligence for the same concepts that was covered in layer 1 and 2 by using claude code subagent and agent skills technologies.  This will allow the reader to reuse this reusable intelligence again and again in his/her projects. It will show not only how to develop this reusable intelligence but how to use it i.e. by creating and using subagents and agents skills for it.
+
+To sum up, each each lesson will cover and expain the concepts and topic in three layers, and the last and fourth layer will be added at the end of the chapter:
+
+1. Layer 1: The traditional way, where a human is taught how to do it manually without the help of AI.
+
+2. Layer 2: The AI-Driven way, where it will be taught how to write a prompt for a Coding Agent (Claude Code and/or Gemini CLI) accomplishing and covering the same thing as done in Layer 1 by hand.
+
+3. Layer 3: In this layer we will teach how to create reusable intelegence addressing the same topics as covered in Layer 1 and Layer 2. We will use Subagent and Agent Skill technologies of Claude Code, to make our knowledge and skill reusable, so that we dont have to give a detailed prompt with indepth instructions everytime, but only a simple prompt will be enough and claude code can reuse the same intelegence again and again, by using the agent skills automatically.  
+
+4. Layer 4: The Spec-Driven way, once all the lessons in the chapter have been covered, at the end of the chapter the reader will be shown how to create and develop a mini-project using all the knowledge gained in the all the lessons in the chapter using the spec driven development tool i.e. Github Spec-Kit. It will also be shown how we reused the subagents and agent skills but with spec-driven methodology.
+
+It is very important to note that Layers 1-3 are applied per lesson, and Layer 4 per chapter.
+
+### Claude Code Improved Prompt Template
+
+https://claude.ai/share/13c22e8c-4bf6-444e-be61-87d8e2a8b6ae
+
+
+### Example Chapter: How to Teach OpenAI Agents SDK
+
+I want to write a part of the book which teaches openai agents sdk using AI Driven Development and Spec Driven Development way. 
+
+I want to teach AI Native development using OpenAI Agents SDK as the go to framework for teaching beginners. The official documentation does a good job of teaching it:
+
+https://openai.github.io/openai-agents-python/
+
+We will now use the four layer framework to write the following Chapter:
+
+Chapter Title: Fundamentals of Building Agents using OpenAI Agents SDK.
+Lesson 1: Creating Your First Agent with Custom Instructions
+Lesson 2: Agent Handoffs - Building Multi-Agent Systems
+Lesson 3: Agents as Tools - Orchestrating Agent Networks
+Lesson 4: Developing Agentic Project the Spec-Driven Way
+
+Note that the first three lessons are covering the topics and teaching them by using the three layers discussed above. In Lesson 4 at the end of the chapter we are creating a project covering all the material taught in the previous lessons of the chapter and creating a integrated project using Spec-Driven Development.  
+
+### For the Kubernetes it might become 7 layer framework:
 1.⁠ ⁠Classic documentation using Command line tool (kubectl) Layer
 2.⁠ ⁠⁠kubectl-ai Layer
 3.⁠ ⁠⁠kagent Layer

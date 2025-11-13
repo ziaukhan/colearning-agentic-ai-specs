@@ -277,7 +277,7 @@ Note that the first three lessons are covering the topics and teaching them by u
 4.⁠ ⁠⁠claude code layer
 5.⁠ ⁠⁠Helm charts layer
 6.⁠ ⁠⁠subagent and agent skills layer
-7.⁠ ⁠⁠SDD Layer
+7.⁠ ⁠⁠SDD Layer (End of the Chapter)
 
 ## Design
 

@@ -271,12 +271,19 @@ Lesson 4: Developing Agentic Project the Spec-Driven Way
 Note that the first three lessons are covering the topics and teaching them by using the three layers discussed above. In Lesson 4 at the end of the chapter we are creating a project covering all the material taught in the previous lessons of the chapter and creating a integrated project using Spec-Driven Development.  
 
 ### For the Kubernetes it might become 7 layer framework:
+
 1.⁠ ⁠Classic documentation using Command line tool (kubectl) Layer
+
 2.⁠ ⁠⁠kubectl-ai Layer
+
 3.⁠ ⁠⁠kagent Layer
+
 4.⁠ ⁠⁠claude code layer
+
 5.⁠ ⁠⁠Helm charts layer
+
 6.⁠ ⁠⁠subagent and agent skills layer
+
 7.⁠ ⁠⁠SDD Layer (End of the Chapter)
 
 ## Design

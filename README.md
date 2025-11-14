@@ -55,16 +55,17 @@ The book is geared towards teaching beginners how to program Modern Python, Type
 35. OpenAI Agents SDK Development using AIDD and SDD
 36. Google ADK Development using AIDD and SDD
 37. Anthropic Agents Kit Development using AIDD and SDD
-38. MCP Fundamentals
-39. MCP Server Development using AIDD and SDD
-40. Code execution with MCP: Building more efficient agents
+38. Microsoft Agent Framework using AIDD and SDD
+39. MCP Fundamentals
+40. MCP Server Development using AIDD and SDD
+41. Code execution with MCP: Building more efficient agents
 * https://www.anthropic.com/engineering/code-execution-with-mcp
 * https://www.youtube.com/watch?v=CT4WfKEQY6M
 
-41. FastAPI for Agents (Primer)
+42. FastAPI for Agents (Primer)
 Coverage: minimal agent tool endpoint; Pydantic models from your SDD; streaming tokens (SSE/WebSocket) for live agent output; simple API key/JWT; local testing with pytest + httpx.
 
-42. Test-Driven Agent Development (TDD) & Contracts
+43. Test-Driven Agent Development (TDD) & Contracts
 By this point readers have tools/endpoints and can write tests for:
 * tool/skill contracts (Pydantic schemas, argument validation)
 * prompt “unit tests” with goldens & mocks
@@ -72,48 +73,49 @@ By this point readers have tools/endpoints and can write tests for:
 * API tests with pytest/httpx fixtures
 * property-based tests (Hypothesis) for tool inputs
 
-43. Evals
+44. Evals
 * We follow with Evals to cover higher-level, task and system-level evaluation, and wire TDD + Evals together in CI/CD (see chapter 54).
 
-44. Building Effective Agents (Design Patterns)
+45. Building Effective Agents (Design Patterns)
 
-45. Memory & State for Agents
+46. Memory & State for Agents
 * episodic vs long-term memory
 * summarization windows, vector + relational hybrids
 * TTL and forgetting
 
-46. Combo Agentic Pattern using AIDD and SDD
+
+47. Combo Agentic Pattern using AIDD and SDD
 Covers: https://github.com/ziaukhan/colearning-agentic-ai-specs/blob/main/chap43_spec_combo.md
-47. Vector Databases and RAG for AI Agents
-48. Relational Databases for AI Agents
-49. Graph Databases and Graph RAG for AI Agents
+48. Vector Databases and RAG for AI Agents
+49. Relational Databases for AI Agents
+50. Graph Databases and Graph RAG for AI Agents
 
 
 ## Part 7: AI Cloud Native Development with AIDD and SDD (12 chapters)
-50. FastAPI for AI Cloud-Native Services with AIDD and SDD (Deep Dive)
+51. FastAPI for AI Cloud-Native Services with AIDD and SDD (Deep Dive)
 * Async I/O, background tasks, streaming (SSE/WebSocket)
 * AuthN/AuthZ (API key, JWT), rate limiting patterns
 * Validation with Pydantic, error handling, dependency injection
 * Testing with pytest/httpx, OpenAPI governance, 12-factor config via env vars (no Docker yet)
 
-51. Docker for AI Services: Building, Shipping, and Running Containers with AIDD and SDD
+52. Docker for AI Services: Building, Shipping, and Running Containers with AIDD and SDD
 * Containerize the existing FastAPI app
 * Dev vs prod images, multi-stage builds, health checks
 * Compose for local stacks (app + Postgres/Redis), env files
 
-52. Apache Kafka for Event-Driven AI Systems with AIDD and SDD
+53. Apache Kafka for Event-Driven AI Systems with AIDD and SDD
 * Add producer/consumer to the same service (e.g., ai-task events)
 * Exactly-once/idempotency, retry/DLQ, back-pressure
 * Contract testing for events, observability of streams
 * An idempotency key pattern (tool invocation id)
 * A DLQ drill lab (force a poison message; observe metrics; replay)
 
-53. Kubernetes for AI Services: Orchestrating Containers and Agents
+54. Kubernetes for AI Services: Orchestrating Containers and Agents
 * kubectl-ai
 * kagent
 * with AIDD and SDD
 
-54. CI/CD & Infrastructure-as-Code for AI Service with AIDD and SDD
+55. CI/CD & Infrastructure-as-Code for AI Service with AIDD and SDD
 * GitHub Actions
 * Testcontainers
 * Gated deploys with eval thresholds
@@ -121,15 +123,15 @@ Covers: https://github.com/ziaukhan/colearning-agentic-ai-specs/blob/main/chap43
 * env promotion
 * migrations
 
-55. Dapr for AI Microservices: Sidecar Building Blocks with AIDD and SDD
+56. Dapr for AI Microservices: Sidecar Building Blocks with AIDD and SDD
 * State, Pub/Sub, Service Invocation
 
-56. Dapr Actors for Agentic State and Concurrency with AIDD and SDD
-57. Dapr Workflows for Long-Running Orchestration with AIDD and SDD
-58. Dapr Agents: Designing Agentic Services on Dapr with AIDD and SDD
+57. Dapr Actors for Agentic State and Concurrency with AIDD and SDD
+58. Dapr Workflows for Long-Running Orchestration with AIDD and SDD
+59. Dapr Agents: Designing Agentic Services on Dapr with AIDD and SDD
 
 
-59. Observability, Cost & Performance Engineering with AIDD and SDD
+60. Observability, Cost & Performance Engineering with AIDD and SDD
 * OpenTelemetry traces/metrics/logs across agents, tools, and model calls
 * SLOs, error budgets, synthetic checks
 * Distributed tracing for agent graphs (spans per tool/prompt), log redaction
@@ -139,8 +141,8 @@ Covers: https://github.com/ziaukhan/colearning-agentic-ai-specs/blob/main/chap43
 * early-exit/timeout/hedged requests
 * token budgeting
 
-60. API Edge & Gateway for AI Services (Ingress/Kong) with AIDD and SDD
-61. Security, Safety & Governance for Agentic Systems
+61. API Edge & Gateway for AI Services (Ingress/Kong) with AIDD and SDD
+62. Security, Safety & Governance for Agentic Systems
 * secret management (Vault/KMS)
 * PII handling & redaction
 * model/endpoint allow-lists
@@ -152,23 +154,23 @@ Covers: https://github.com/ziaukhan/colearning-agentic-ai-specs/blob/main/chap43
 
 ## Part 8: Turing LLMOps — Proprietary Intelligence (4 chapters)
 
-62. Proprietary Intelligence with Turing: Concepts & Setup
+63. Proprietary Intelligence with Turing: Concepts & Setup
 * https://www.turing.com/
 * What “proprietary intelligence” means vs off-the-shelf/open.
 * Account/project setup, environments, access, and roles.
 * Mapping your agent use-cases to Turing primitives.
 
-63. Turing Customization Workflow: Prepare → Fine-Tune → Evaluate
+64. Turing Customization Workflow: Prepare → Fine-Tune → Evaluate
 * Light data prep (curation, basic cleaning, safety pass).
 * One-click/managed fine-tunes (no deep PyTorch), checkpoints, revert.
 * Quality gates: task/safety evals; acceptance thresholds.
 
-64. Deploy & Integrate: Endpoints, SDKs, and Agent Backends
+65. Deploy & Integrate: Endpoints, SDKs, and Agent Backends
 * Deploying models/endpoints; versioning and traffic splits.
 * Plugging into your Agents SDK / MCP Servers / FastAPI edge.
 * Auth, rate limits, latency/cost guardrails.
 
-65. Operate in Production: Monitoring, Cost, & Governance
+66. Operate in Production: Monitoring, Cost, & Governance
 * Metrics (latency, errors, tokens), dashboards, alerts.
 * Safety monitoring & redaction; incident/rollback playbooks.
 * Licensing, model cards, audit trails.
@@ -176,30 +178,30 @@ Covers: https://github.com/ziaukhan/colearning-agentic-ai-specs/blob/main/chap43
 
 
 ## Part 9: TypeScript: The Language of Realtime and Interaction (5 Chapters)
-66. Modern TypeScript Essentials (types, unions, generics, narrowing)
-67. Tooling: tsconfig, esbuild/Vite, pnpm/Bun, project structure
-68. Async Patterns in TS: Promises, async/await, streams, AbortController
-69. Node & Edge Runtimes (Node, Deno, Edge Functions)
-70. HTTP, SSE, and WebSockets in TS (clients & servers)
-71. Testing in TS (Vitest/Jest) and contract tests
+67. Modern TypeScript Essentials (types, unions, generics, narrowing)
+68. Tooling: tsconfig, esbuild/Vite, pnpm/Bun, project structure
+69. Async Patterns in TS: Promises, async/await, streams, AbortController
+70. Node & Edge Runtimes (Node, Deno, Edge Functions)
+71. HTTP, SSE, and WebSockets in TS (clients & servers)
+72. Testing in TS (Vitest/Jest) and contract tests
 
 ## Part 10: Building Agentic Frontends with OpenAI ChatKit and Next.js (3 Chapters)
-72. Building Chat UIs (streaming tokens, tool call visualizers) with OpenAI ChatKit
-73. React + Next.js Primer for Agents (server components, actions)
-74. Deploy & Preview Environments (Vercel/Netlify patterns)
+73. Building Chat UIs (streaming tokens, tool call visualizers) with OpenAI ChatKit
+74. React + Next.js Primer for Agents (server components, actions)
+75. Deploy & Preview Environments (Vercel/Netlify patterns)
 
 ## Part 11: Building Realtime and Voice Agents (6 Chapters)
-75. Realtime APIs (SSE/WebSocket/WebRTC) for agents
-76. Browser Audio: capture, VAD, streaming to models
-77. TTS/STT pipelines (latency budgets, duplex streams)
-78. Multimodal IO (image/screen capture, tools)
-79. Mobile & PWA considerations (background, mic perms)
-80. Load, Cost, and QoS for Realtime (backpressure, fallbacks)
+76. Realtime APIs (SSE/WebSocket/WebRTC) for agents
+77. Browser Audio: capture, VAD, streaming to models
+78. TTS/STT pipelines (latency budgets, duplex streams)
+79. Multimodal IO (image/screen capture, tools)
+80. Mobile & PWA considerations (background, mic perms)
+81. Load, Cost, and QoS for Realtime (backpressure, fallbacks)
 
 ## Part 12: Agentic AI is the Future
-81. Agentic Web: Open (Nanda and A2A) and Closed Garden (OpenAI App and Apps SDK)
-82. Agentic Organizations
-83. Agentic Commerce
+82. Agentic Web: Open (Nanda and A2A) and Closed Garden (OpenAI App and Apps SDK)
+83. Agentic Organizations
+84. Agentic Commerce
 
 
 

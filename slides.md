@@ -1,0 +1,1 @@
+https://www.zdnet.com/article/let-gemini-make-your-next-slide-presentation-for-you-heres-how/

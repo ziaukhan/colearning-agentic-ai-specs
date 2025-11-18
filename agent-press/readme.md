@@ -89,6 +89,8 @@ We are using it because of latest fuctionality: GKE Pod Snapshots and GKE Agent 
 
 https://grok.com/share/bGVnYWN5_d4b031ab-bca9-4d5f-ba5c-398c8f10f74a 
 
+https://grok.com/share/bGVnYWN5_0484c4b5-597b-4700-a6ce-7a189500ef73
+
 https://cloud.google.com/kubernetes-engine/pricing?hl=en
 
 It offers a monthly free tier credit that effectively makes certain clusters free or very low-cost for light usage.

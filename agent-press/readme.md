@@ -15,6 +15,10 @@ Agentic Press lets authors and teams create, ship, and update AI-native books th
 
 Agentic Press is a creation and publishing platform for AI-native books. Authors using the spec-driven methodology design interactive, updatable "living editions" that answer questions, personalize learning paths, and connect to real data. Publish once to web and mobile readers, integrate directly into any major LMS (Canvas, Moodle, Blackboard, Google Classroom), then improve continuously—no reprints required. Books as a service, classroom-ready.
 
+### Detailed pitch
+
+Agentic Press is an innovative platform that empowers authors to create dynamic, AI-powered "living books" using a spec-driven authoring methodology. These books go beyond static text: they interactively answer reader questions, adapt learning paths based on individual needs, integrate real-time data from external APIs (e.g., weather, stock prices, or educational databases), and evolve over time. Authors publish once to responsive web and mobile formats, with seamless embedding into major learning management systems (LMS) like Canvas, Moodle, Blackboard, and Google Classroom via standards such as LTI 1.3 or custom APIs. This "books as a service" model eliminates the need for reprints—updates propagate instantly through Git-based versioning, enabling continuous improvement based on reader feedback or new insights. Ideal for educators, trainers, and content creators, Agentic Press democratizes interactive publishing, fostering engaging, personalized experiences in classrooms, corporate training, or self-paced learning. Monetization options could include subscription tiers for premium features, per-book licensing, or affiliate integrations with data providers.
+
 
 ### Visual identity (quick directions)
 
@@ -77,7 +81,7 @@ The **Agentic Press Reader (web/mobile reader)** builds on top of Docusurus, Git
 
 Each studio session runs in its own isolated environment (GKE Pod Snapshots) with real-time progress tracking, and you can actively steer studio to adjust course as it’s working through the chapters.
 
-The studio backend will be running in GKE and will be using GKE Pod Snapshots with FastAPI and Claude Code and Spec-Kit Plus running in the container. GKE Pod Snapshots allows us to snapshot the in-memory state of running pods/containers (including CPU and GPU workloads), effectively "freezing" Cloud Code session when the author is not using the studio, and then restore/rewaken them almost instantly from the snapshot when the author starts using the studio. The studio will be updating the book github repository.
+The studio backend will be running in GKE and will be using GKE Pod Snapshots with FastAPI, Claude Code, and Spec-Kit Plus running in the container. GKE Pod Snapshots allows us to snapshot the in-memory state of running pods/containers (including CPU and GPU workloads), effectively "freezing" Cloud Code session when the author is not using the studio, and then restore/rewaken them almost instantly from the snapshot when the author starts using the studio. The studio will be updating the book github repository.
 
 ### Note GKE Pricing
 

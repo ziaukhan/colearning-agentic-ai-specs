@@ -81,7 +81,7 @@ The **Agentic Press Reader (web/mobile reader)** builds on top of Docusurus, Git
 
 Each studio session runs in its own isolated environment (GKE Pod Snapshots) with real-time progress tracking, and you can actively steer studio to adjust course as it’s working through the chapters.
 
-The studio backend will be running in GKE and will be using GKE Pod Snapshots with FastAPI, Claude Code, and Spec-Kit Plus running in the container. GKE Pod Snapshots allows us to snapshot the in-memory state of running pods/containers (including CPU and GPU workloads), effectively "freezing" Cloud Code session when the author is not using the studio, and then restore/rewaken them almost instantly from the snapshot when the author starts using the studio. The studio will be updating the book github repository.
+The studio backend will be running in GKE and will be using GKE Pod Snapshots with FastAPI, Claude Code, and Spec-Kit Plus running in the container. GKE Pod Snapshots allows us to snapshot the in-memory state of running pods/containers (including CPU and GPU workloads), effectively "freezing" Claude Code session when the author is not using the studio, and then restore/rewaken them almost instantly from the snapshot when the author starts using the studio. The studio will be updating the book github repository.
 
 ### Note GKE Pricing
 

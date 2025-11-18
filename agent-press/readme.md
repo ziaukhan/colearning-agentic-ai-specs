@@ -83,6 +83,39 @@ Each studio session runs in its own isolated environment (GKE Pod Snapshots) wit
 
 The studio backend will be running in GKE and will be using GKE Pod Snapshots with FastAPI, Claude Code, and Spec-Kit Plus running in the container. GKE Pod Snapshots allows us to snapshot the in-memory state of running pods/containers (including CPU and GPU workloads), effectively "freezing" Claude Code session when the author is not using the studio, and then restore/rewaken them almost instantly from the snapshot when the author starts using the studio. The studio will be updating the book github repository.
 
+Grok 4.1 suggest:
+
+To build a cost-effective, instantly-resumable clone of Claude.ai/code tailored for writing books (instead of code), you do not need to self-host or freeze any Claude instance, as Claude itself is a stateless API with no persistent pod or container to snapshot. Anthropic achieves instant resumption simply by storing conversation history and file contents externally, then resending everything on each request. The optimal architecture uses the standard Anthropic Messages API (or Claude via Bedrock/Vertex) with four simple file-tool calls you implement yourself (list_directory, read_file, write_file, create_file). Store the actual book chapters as real markdown files in a cloud storage bucket (best-value Cloudflare R2) rather than cramming everything into a database row—this gives unlimited size, fast single-file operations, clean exports, and professional feel at near-zero cost. Keep only the chat message history and minimal project metadata in a database (Postgres, Supabase, Firestore). Deploy the backend on serverless platforms (Cloud Run, Vercel, Fly.io) for $0 idle cost and sub-second cold starts. This exact pattern—real bucket storage + stateless API + four file tools—is what powers Claude.ai/code internally and every successful commercial and open-source book-writing artifact clone in 2025, delivering unlimited context, instant resume after weeks of inactivity, and total infrastructure cost of just a few cents per finished novel.
+
+Use R2, it gives a perfect virtual file system:
+
+It’s fast, cheap (R2 = free egress + $0.015/GB), and gives Claude a perfect virtual filesystem — exactly like the real claude.ai/code.
+
+Just implement these methods:
+
+
+def list_directory(path="."):
+    # return list of files in the user's book folder (stored in GCS, DB, etc.)
+
+def read_file(path):
+    # return content of a markdown chapter
+
+def write_file(path, content, append=False):
+    # overwrite or append to chapter
+
+def create_file(path, content):
+    # create new chapter or outline file
+
+Bottom line
+
+For a book-writing artifact/code-style interface, other options are a massive overkill and will make your app slower, buggier, and 5–10× more expensive.
+
+Stick with the proven, lightweight winner:
+
+Anthropic Messages API (Claude 4.5 Sonnet/Opus) + prompt caching + your own four simple file tools + cloud bucket storage.
+
+That’s exactly what claude.ai/code and Artifacts still use under the hood in November 2025, and it remains the cheapest, fastest, and highest-quality way to build what you want.
+
 ### Note GKE Pricing
 
 We are using it because of latest fuctionality: GKE Pod Snapshots and GKE Agent Sandbox: 

@@ -68,3 +68,44 @@ Agentic Press is the platform for AI-native books. Authors and publishers design
 * Engagement analytics dashboard for educators
 * Roster sync and course mapping
 * White-label embedding inside LMS course pages
+
+## Agentic Press: Technical Implementation
+
+The **Agentic Press Reader (web/mobile reader)** builds on top of Docusurus, GitHub and Github Pages. The AI Components in the reader are React based with a FastAPI OpenAI Agents SDK backend with a Serverless Postgres Neon datastore. The backend will be running on Google Kubernetes Engine (GKE). 
+
+**The Agentic Press Studio (authoring)** is a multi-tanent cloud platform for book authors. The front-end is built with OpenAI Chatkit, Novel.sh and Next.js. Just like the Claude Code on the web it lets you kick off coding sessions without opening your terminal. It connects to your GitHub book repository, describe and specify what should be in the book (Spec-Driven Writing), and studio handles the book writing.
+
+Each studio session runs in its own isolated environment (GKE Pod Snapshots) with real-time progress tracking, and you can actively steer studio to adjust course as it’s working through the chapters.
+
+The studio backend will be running in GKE and will be using GKE Pod Snapshots with FastAPI and Claude Code and Spec-Kit Plus running in the container. GKE Pod Snapshots allows us to snapshot the in-memory state of running pods/containers (including CPU and GPU workloads), effectively "freezing" Cloud Code session when the author is not using the studio, and then restore/rewaken them almost instantly from the snapshot when the author starts using the studio. The studio will be updating the book github repository.
+
+### Note GKE Pricing
+
+We are using it because of latest fuctionality: GKE Pod Snapshots and GKE Agent Sandbox: 
+
+https://grok.com/share/bGVnYWN5_d4b031ab-bca9-4d5f-ba5c-398c8f10f74a 
+
+https://cloud.google.com/kubernetes-engine/pricing?hl=en
+
+It offers a monthly free tier credit that effectively makes certain clusters free or very low-cost for light usage.
+
+GKE Free Tier Details (as of November 2025)
+
+* $74.40 in monthly credits per billing account (resets every month, no rollover).
+* This credit fully covers the cluster management fee ($0.10/hour ≈ $73–74/month for a full month) for one of the following:
+* One zonal Standard cluster (single-zone).
+* One Autopilot cluster (any topology).
+
+Applies only to zonal Standard and Autopilot clusters. 
+
+Regional clusters, additional clusters, or GKE Enterprise features do not qualify for the credit.
+
+The credit covers only the control plane / management fee — not the cost of running actual workloads (pods, nodes, storage, networking, etc.).
+
+### Key Takeaways
+
+* You can run one idle GKE cluster completely free forever (as long as you stay within one eligible zonal/Autopilot cluster per billing account).
+
+* As soon as you deploy real workloads (especially in Autopilot), you pay normal pay-as-you-go rates for the resources those pods consume — there is no free compute quota beyond the management credit.
+
+* New Google Cloud accounts also get a **$300 one-time trial credit (valid for 90 days)** that can cover heavier usage during signup.

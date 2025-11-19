@@ -157,3 +157,63 @@ Spec Kit is superior if you want the AI to act like a **Junior Contractor** who 
 
 **Hybrid Approach (The "Power User" Move):**
 Use **Spec Kit** to generate the initial `spec.md` to get your thoughts clear and rigid. Then, paste that spec into **Antigravity's Manager View** and say: *"Execute this spec using your native planning tools."* This gives you the rigor of a written spec with the visual execution power of Antigravity.
+
+# The Tessl Way
+
+Tessl represents a more radical shift than either Google Antigravity or GitHub Spec Kit. While Antigravity and Spec Kit are tools to **help you write code**, Tessl’s philosophy is that **you shouldn't be writing code at all.**
+
+The key difference lies in what is considered the "Source of Truth."
+
+### 1. The Philosophies at a Glance
+
+| Platform | Philosophy | Source of Truth | Role of Code |
+| :--- | :--- | :--- | :--- |
+| **GitHub Spec Kit** | **"Structured Context"** | **Markdown Files** (`spec.md`) | **The Product.** You and the AI co-author it. You read and maintain the code. |
+| **Google Antigravity** | **"Agentic Collaboration"** | **The Codebase** + **Artifacts** | **The Product.** The AI helps you build it, but the code is what you deploy and own. |
+| **Tessl** | **"AI Native"** | **The Spec** (Open Spec Standard) | **A By-product.** Code is "compiled" from the spec. You are discouraged from editing it manually. |
+
+---
+
+### 2. Detailed Differences
+
+#### A. Maintenance vs. Generation
+* **Antigravity & Spec Kit (Code-Centric):**
+    When you need to change a feature (e.g., "Change the button color to blue"), you ask the AI to edit the code files. You are maintaining the *code*.
+* **Tessl (Spec-Centric):**
+    You do not touch the code. You update the **Spec**. The Tessl engine then *regenerates* the implementation code to match the new spec. Think of the Spec as "source code" and the actual Python/JS/Go code as the "binary" that the AI compiles for you.
+
+#### B. The "Spec Registry"
+* **Antigravity & Spec Kit:**
+    The AI "hallucinates" or searches the web to understand how to use a library like `pandas` or `react`. It might use outdated methods.
+* **Tessl:**
+    Tessl introduces a **Spec Registry**. Library maintainers (or the community) publish "Usage Specs" that definitively tell the AI how to use their library. When a Tessl agent writes code, it doesn't guess; it looks up the official "instruction manual" for that specific version of the library.
+
+#### C. Portability & Lock-in
+* **GitHub Spec Kit:**
+    **Most Portable.** It's just Markdown. You can take your `spec.md` to Cursor, VS Code, Zed, or any LLM.
+* **Google Antigravity:**
+    **Platform Locked.** The "Artifacts" (plans, preview cards) live inside the Google IDE environment.
+* **Tessl:**
+    **Ecosystem Locked.** It is a platform. While it uses an "Open Spec" standard, the value comes from the Tessl engine effectively "compiling" that spec into code and running the tests.
+
+### 3. The "Spec" Format
+* **GitHub Spec Kit:** A simple Markdown file with natural language (e.g., "The app should have a dark mode").
+* **Google Antigravity:** A dynamic "Plan" card in the UI that the agent checks off as it works.
+* **Tessl:** A structured, formal document (often JSON-like or structured YAML/Markdown) that includes precise API contracts, data models, and logic requirements. It is machine-readable first, human-readable second.
+
+### Summary: Which is right for you?
+
+* **Use Google Antigravity** if you are a **Builder**. You want a powerful teammate to help you write code faster, but you still want to get your hands dirty in the implementation.
+* **Use GitHub Spec Kit** if you are an **Engineering Manager** or **Lead**. You want to enforce architectural rules and context across a team of developers using different editors (VS Code, Cursor).
+* **Use Tessl** if you are a **Visionary/Architect**. You believe code is "technical debt" and want to manage software at a higher level of abstraction, defining *what* the software does and letting a machine handle *how* it is written.
+
+***
+
+**Relevant Video Resource:**
+
+[Tessl Product Demo](https://www.youtube.com/watch?v=6Yn6IwYeI7I)
+
+This video provides a clear demonstration of the Tessl workflow, showing exactly how "specs" drive the code generation process and how it differs from standard AI coding assistants.
+
+
+http://googleusercontent.com/youtube_content/0

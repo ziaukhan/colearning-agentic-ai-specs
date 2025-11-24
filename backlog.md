@@ -10,7 +10,7 @@
 
 5.⁠ ⁠Chat bot context aware
 
-6.⁠ ⁠Chat bot Study Mode (nstructing it to act as a tutor that guides users through our pre-defined modules, using a Socratic method (like Study Mode) but referencing its knowledge (our book) for facts.)
+6.⁠ ⁠Chat bot Study Mode (instructing it to act as a tutor that guides users through our pre-defined modules, using a Socratic method (like Study Mode) but referencing its knowledge (our book) for facts.)
 
 7.⁠ ⁠Mindmap
 
